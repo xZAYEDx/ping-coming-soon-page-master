@@ -29,18 +29,18 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop View
-<img src="https://user-images.githubusercontent.com/46198029/155544465-f9c55f7a-891b-4f17-86c2-31906e01e727.png" width="400" height="300" />
+<img src="https://user-images.githubusercontent.com/46198029/155544465-f9c55f7a-891b-4f17-86c2-31906e01e727.png" />
 
 
 ### Desktop Error
-<img src="https://user-images.githubusercontent.com/46198029/155546908-5a38e1e9-3f52-4fa9-b246-fb307a248b49.png"  width="400" height="300"/>
+<img src="https://user-images.githubusercontent.com/46198029/155546908-5a38e1e9-3f52-4fa9-b246-fb307a248b49.png" />
 
 
 ### Mobile View 
-<img src="https://user-images.githubusercontent.com/46198029/155547940-1b422496-ebe9-4c19-a31a-391ad6e7659d.png" width="200" height="500"/>
+<img src="https://user-images.githubusercontent.com/46198029/155547940-1b422496-ebe9-4c19-a31a-391ad6e7659d.png" />
 
 ### Mobile View Error
-<img src="https://user-images.githubusercontent.com/46198029/155547462-fb54127d-10e8-46fa-83ae-efb3eae8def7.png" width="200" height="500"/>
+<img src="https://user-images.githubusercontent.com/46198029/155547462-fb54127d-10e8-46fa-83ae-efb3eae8def7.png" />
 
 ### Links
 
