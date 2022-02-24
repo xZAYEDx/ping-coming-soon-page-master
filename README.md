@@ -44,7 +44,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-page-using-semantic-elements-in-html5-scss-and-es6-vqifEsgxvX)
 - Live Site URL: [Demo](https://xzayedx.github.io/ping-coming-soon-page-master/)
 
 ## My process
