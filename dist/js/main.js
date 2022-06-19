@@ -32,8 +32,13 @@ let engine = (id, serial, message) => {
     } else if (!isValidEmail) {
         errorMsg[serial].innerHTML = message;
         id.style.border = "1px solid #ff5263";
+
+
     } else {
         errorMsg[serial].innerHTML = "";
         id.style.border = "1px solid #4f7df3";
+        alert("Thank you for subscribing!");
+        email.value = '';
     }
+
 }
