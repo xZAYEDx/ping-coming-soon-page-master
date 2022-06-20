@@ -45,7 +45,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-page-using-semantic-elements-in-html5-scss-and-es6-vqifEsgxvX)
-- Live Site URL: [Demo](https://zayed-ping-coming-soon-page-master.netlify.app/)
+- Live Site URL: [ping-coming-soon-page-master](https://zayed-ping-coming-soon-page-master.netlify.app/)
 
 ## My process
 
