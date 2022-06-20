@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+@import 'resets';
+body {
+    background-color: $body-color;
+    min-height: 100vh;
+    min-width: 100vw;
+    @include flexCenter(row);
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+    /*****************************************/
+    // HEADER
+    // Logo 
+    header {
+        display: inline-block;
+        @include flexCenter(column);
+        margin-top: 150px;
+        margin-bottom: 80px;
+    }
+    // Content 
+    section {
+        h1 {
+            color: $Gray;
+            font-weight: map-get($font-weight, light);
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            text-align: center;
+            .bold {
+                font-weight: map-get($font-weight, bold);
+                color: $Very-Dark-Blue;
+            }
+        }
+        p {
+            font-size: 0.95rem;
+            text-align: center;
+            font-weight: map-get($font-weight, light);
+            color: $Very-Dark-Blue;
+        }
+    }
+    /*****************************************/
+    // Input form
+    .subscribe-form {
+        margin-top: -70px;
+        form {
+            @include flexCenter(column);
+            width: 100%;
+            .enterInput {
+                width: 100%;
+                @include flexCenter(column);
+                input[type=email] {
+                    width: 90%;
+                    height: 50px;
+                    outline: none;
+                    border: 1px solid $Pale-Blue;
+                    border-radius: 25px;
+                    padding: 20px 30px;
+                    box-sizing: border-box;
+                    &::placeholder {
+                        color: $Gray;
+                    }
+                    &:focus {
+                        border-color: $Blue;
+                    }
+                    &:invalid {
+                        border: 1px solid $Light-Red;
+                    }
+                    &:valid {
+                        border: 1px solid $Pale-Blue;
+                    }
+                }
+                .error {
+                    @include flexCenter(row);
+                    color: $Light-Red;
+                    font-size: 0.75rem;
+                    font-weight: map-get($font-weight, semi-bold);
+                    font-style: italic;
+                    opacity: 0.8;
+                    margin-top: 5px;
+                }
+            }
+            button {
+                width: 90%;
+                height: 50px;
+                outline: none;
+                margin-top: 10px;
+                border: 1px solid $Blue;
+                background-color: $Blue;
+                border-radius: 25px;
+                padding: 10px 10px;
+                color: $body-color;
+                box-sizing: border-box;
+                box-shadow: 5px 10px 18px rgba(79, 125, 243, 0.2);
+                transition: 0.3s;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.85;
+                }
+            }
+        }
+    }
+    /*****************************************/
+    // Preview image
+    section {
+        display: block;
+        @include flexCenter(column);
+        margin: 90px 30px 120px 30px;
+        img {
+            padding: 0;
+            max-width: 100%;
+            margin-bottom: 200px;
+        }
+    }
+}
+
+
+/*****************************************/
+
+//FOOTER 
+footer {
+    display: block;
+    justify-self: center;
+    align-self: flex-end;
+    position: absolute;
+    text-align: center;
+    font-size: 11px;
+    margin-bottom: 50px;
+    //Social links
+    .links {
+        @include flexCenter(row);
+        width: 100%;
+        margin-inline: auto;
+        margin-bottom: 20px;
+        i {
+            font-size: 1rem;
+            padding: 1.9rem;
+            transition: all 0.25s ease-out;
+            color: $Blue;
+            &:hover {
+                color: $body-color;
+            }
+        }
+        a {
+            @include flexCenter(row);
+            width: 2rem;
+            height: 2rem;
+            border: 0.078125rem solid $Pale-Blue;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.25s ease-out;
+            &:hover {
+                background-color: $Blue;
+            }
+            &:nth-of-type(2) {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+    //Copyright
+    .copy {
+        color: $Gray;
+        margin-bottom: 10px;
+    }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+    }
+}
+
+
+/*****************************************/
+
+// MEDIA QUERIES for larger screens
+@media screen and (min-width: 1024px) {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main {
+        header {
+            margin-top: 82px;
+        }
+        section {
+            h1 {
+                font-size: 3.142rem;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+        }
+        .subscribe-form {
+            form {
+                @include flexCenter(row);
+                position: relative;
+                left: 10px;
+                .enterInput {
+                    width: 100%;
+                    @include flexCenter(column);
+                    input[type=email] {
+                        width: 90%;
+                    }
+                    .error {
+                        @include flexCenter(row);
+                        position: absolute;
+                        top: 55px;
+                        left: 50px
+                    }
+                }
+                button {
+                    margin: 0 0 0 -18px;
+                    width: 30%;
+                }
+            }
+        }
+        section {
+            img {
+                width: 642px;
+            }
+        }
+    }
+    footer {
+        margin-top: 100px;
+    }
+}
